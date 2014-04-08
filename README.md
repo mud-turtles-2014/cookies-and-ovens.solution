@@ -12,7 +12,10 @@ To successfully complete this challenge, you should be familiar with the followi
 - [TDD in Javascript using Jasmine](http://jasmine.github.io/2.0/introduction.html)
 - Fundamental jQuery functions for creating elements ([jQuery()](http://api.jquery.com/jQuery/#jQuery2)), inserting them into the view ([append()](http://api.jquery.com/append/)), and binding behavior to events with methods like [on()](http://api.jquery.com/on/)
 
-## Objectives
+### Step 0: Install Jasmine into the project
+
+1. Grab the most recent [Jasmine stand-alone distribution](https://github.com/pivotal/jasmine/tree/master/dist).
+2. unzip the files into your project directory
 
 ### Step 1: TDD OOJS
 
