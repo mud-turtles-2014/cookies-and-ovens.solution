@@ -1,8 +1,8 @@
-# Behavior Drill Cookies And Ovens 
- 
-##Learning Competencies 
+# Behavior Drill Cookies And Ovens
 
-##Summary 
+##Learning Competencies
+
+##Summary
 
  You've already built a bakery in Ruby, [remember](http://socrates.devbootcamp.com/challenges/83)?  In this challenge, you'll be exercising your Object-Oriented JavaScript skills in building a web-based bakery application.
 
@@ -15,17 +15,11 @@ To successfully complete this challenge, you should be familiar with the followi
 
 ## Objectives
 
-### Fork the Fiddle
-
-Fork the [JSFiddle for Cookies and Ovens](http://jsfiddle.net/openspectrum/hCNAU/).  All of the HTML and CSS has been written, you only need to add your own jQuery-flavored JavaScript.
-
 ### A Bakery in your Browser
 
 Your job is to figure out how to model each of the components of this application and to provide an elegant, object-oriented solution.
 
-When you are finished, your application should behave like this:
-
-<iframe width="640" height="480" src="http://www.youtube.com/embed/KdOxXcYMPJI?rel=0" frameborder="0" allowfullscreen></iframe>
+When you are finished, your application should behave [like this](http://www.youtube.com/embed/KdOxXcYMPJI?rel=0).
 
 Notice the features in play here:
 
@@ -51,11 +45,11 @@ When you do write out your solution, pay attention to how you organize the conce
 - Where does the user input (i.e. clicking of buttons, submitting forms) get processed?
 - How are you maintaining consistency between the data and its presentation?
 
-For *extra bonus points*, implement your code using the MVC design pattern. 
+For *extra bonus points*, implement your code using the MVC design pattern.
 
 ##Releases
-###Release 0 
+###Release 0
 
-##Optimize Your Learning 
+##Optimize Your Learning
 
 ##Resources
