@@ -9,9 +9,8 @@
 To successfully complete this challenge, you should be familiar with the following concepts and library features:
 
 - [Object-Oriented JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+- [TDD in Javascript using Jasmine](http://jasmine.github.io/2.0/introduction.html)
 - Fundamental jQuery functions for creating elements ([jQuery()](http://api.jquery.com/jQuery/#jQuery2)), inserting them into the view ([append()](http://api.jquery.com/append/)), and binding behavior to events with methods like [on()](http://api.jquery.com/on/)
-- The [Model-View-Controller design pattern](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-
 
 ## Objectives
 
