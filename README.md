@@ -4,7 +4,8 @@
 
 ##Summary
 
- You've already built a bakery in Ruby, [remember](http://socrates.devbootcamp.com/challenges/83)?  In this challenge, you'll be exercising your Object-Oriented JavaScript skills in building a web-based bakery application.
+You've already built a bakery in Ruby, [remember](http://socrates.devbootcamp.com/challenges/83)?  In this challenge, you'll be exercising your Object-Oriented JavaScript skills in building a web-based bakery application.
+
 ---
 
 Before writing any code, you should develop an understanding of your object model and determine the essential properties and behaviors of each object.
