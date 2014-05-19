@@ -5,19 +5,24 @@
 ##Summary
 
  You've already built a bakery in Ruby, [remember](http://socrates.devbootcamp.com/challenges/83)?  In this challenge, you'll be exercising your Object-Oriented JavaScript skills in building a web-based bakery application.
+---
 
-To successfully complete this challenge, you should be familiar with the following concepts and library features:
+Before writing any code, you should develop an understanding of your object model and determine the essential properties and behaviors of each object.
 
-- [Object-Oriented JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript/Introduction_to_Object-Oriented_JavaScript)
-- [TDD in Javascript using Jasmine](http://jasmine.github.io/2.0/introduction.html)
-- Fundamental jQuery functions for creating elements ([jQuery()](http://api.jquery.com/jQuery/#jQuery2)), inserting them into the view ([append()](http://api.jquery.com/append/)), and binding behavior to events with methods like [on()](http://api.jquery.com/on/)
+When you do write out your solution, pay attention to how you organize the concerns:
 
-### Step 0: Install Jasmine into the project
+- How tightly coupled are your objects?  Do you follow the Law of Demeter?
+- Where does the user input (i.e. clicking of buttons, submitting forms) get processed?
+- How are you maintaining consistency between the data and its presentation?
+
+##Releases
+
+###Release 0 - Install Jasmine into the project
 
 1. Grab the most recent [Jasmine stand-alone distribution](https://github.com/pivotal/jasmine/tree/master/dist).
 2. unzip the files into your project directory
 
-### Step 1: TDD OOJS
+### Release 1 - TDD OOJS
 
 Your first task is to drive out the basic functionality of our `Cookie` and `Oven` classes.
 
@@ -34,7 +39,7 @@ Your first task is to drive out the basic functionality of our `Cookie` and `Ove
 - We can `bake` an `oven` for a minute
 - LOTS LOTS MORE!
 
-### Step 2: A Bakery in your Browser
+### Release 2 - A Bakery in your Browser
 
 Your job is to figure out how to wire the html forms and events to interact with our OOJS `Oven` and `Cookie` classes.
 
@@ -47,19 +52,13 @@ Notice the features in play here:
 - Users can place a batch of cookies in the oven by clicking the `Add to oven` button.
 - Pressing the `Bake for 1 minute` button will bake all of the cookies in the oven, and the **state** of the cookie will change accordingly.
 
----
-
-Before writing any code, you should develop an understanding of your object model and determine the essential properties and behaviors of each object.
-
-When you do write out your solution, pay attention to how you organize the concerns:
-
-- How tightly coupled are your objects?  Do you follow the Law of Demeter?
-- Where does the user input (i.e. clicking of buttons, submitting forms) get processed?
-- How are you maintaining consistency between the data and its presentation?
-
-##Releases
-###Release 0
 
 ##Optimize Your Learning
 
 ##Resources
+
+To successfully complete this challenge, you should be familiar with the following concepts and library features:
+
+- [Object-Oriented JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+- [TDD in Javascript using Jasmine](http://jasmine.github.io/2.0/introduction.html)
+- Fundamental jQuery functions for creating elements ([jQuery()](http://api.jquery.com/jQuery/#jQuery2)), inserting them into the view ([append()](http://api.jquery.com/append/)), and binding behavior to events with methods like [on()](http://api.jquery.com/on/)
