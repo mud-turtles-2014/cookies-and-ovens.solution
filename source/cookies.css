@@ -102,11 +102,11 @@ li {
 }
 
 #prep-table > li:hover > .action {
-	background: red;
+	background: fuchsia;
 }
 
 #error {
-	background: red;
+	background: fuchsia;
 	color: white;
 
 	position: fixed;
@@ -117,4 +117,8 @@ li {
 
 	transform: translate3d(0, 100%, 0);
 	transition: transform 113ms;
+}
+
+#error.show {
+	transform: translate3d(0, 0, 0);
 }

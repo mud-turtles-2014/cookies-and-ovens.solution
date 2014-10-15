@@ -133,7 +133,7 @@ View.prototype.addCookieSubmitListener = function View_addCookieSubmitListener()
 
 	this.$newCookieForm.submit(function(event) {
 		/* Note: In this scope, this is the #new-cookie-form DOM element. */
-
+console.log(event);
 		// We don't actually want to submit the form to the server. All processing
 		// occurrs client side.
 		event.preventDefault();
@@ -202,9 +202,9 @@ View.prototype.addOvenBakeListener = function View_addOvenBakeListener() {
 
 View.prototype.error = function View_error(message) {
 	this.$error.html(message);
-	this.$error.css('transform', 'translate3d(0, 0, 0)');
+	this.$error.addClass('show');
 	setTimeout(function() {
-		this.$error.css('transform', 'translate3d(0, 100%, 0)')
+		this.$error.removeClass('show');
 	}.bind(this), 1000)
 };
 
