@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body>
+	<head>
+		<link rel="stylesheet" href="cookies.css">
+		<script src="jquery.min.js"></script>
+		<script src="cookies.js"></script>
+	</head>
+	<ul id="prep-table">
+		<form id="new-cookie">
+			<label for="new-cookie-type">cookies: </label><input type="text" id="new-cookie-type" placeholder="cookie type" value="chocolate chip">
+			<label for="new-cookie-bake-time">bake time: </label><input type="number" value=10 id="new-cookie-bake-time"> minutes
+			<input type="submit" style="display: none; visibility:hidden">		
+		</form>
+	</ul>
+	<ul id="oven">
+		<li class="status">Oven empty (capacity: 3)</li>
+	</ul>
+	<div id="error"></div>	
+</body>
+</html>
