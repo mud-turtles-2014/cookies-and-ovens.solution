@@ -1,55 +1,21 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Behavior Drill: Cookies and Ovens - jsFiddle demo</title>
-
-  <link rel="stylesheet" type="text/css" href="./application.css" />
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="./application.js"></script>
-</head>
-
 <body>
-  <div class="row">
-  <div class="span6">
-    <h2>Prep Table</h2>
-    <ul id="prep_batches">
-    </ul>
-    <form id="new_batch" name="new_batch">
-      <label>Cookie type:</label>
-      <input name="batch_type" type="text" placeholder="e.g. 'oatmeal raisin'" />
-      <br />
-
-      <label for="bake_time">Bake time:</label>
-      <input name="bake_time" type="number" min="0" max="20" />
-      <br />
-
-      <input type="submit" value="Make Batch"/>
-    </form>
-  </div>
-
-  <div class="span6">
-    <h2>Oven</h2>
-    <table id="oven">
-      <tr>
-        <td id="rack_0">[empty]</td>
-      </tr>
-      <tr>
-        <td id="rack_1">[empty]</td>
-      </tr>
-      <tr>
-        <td id="rack_2">[empty]</td>
-      </tr>
-    </table>
-
-    <button id="bake">Bake for 1 minute</button>
-  </div>
-</div>
+	<head>
+		<link rel="stylesheet" href="cookies.css">
+		<script src="js/vendor/jquery.js"></script>
+		<script src="cookies.js"></script>
+	</head>
+	<ul id="prep-table">
+		<form id="new-cookie">
+			<label for="new-cookie-type">cookies: </label><input type="text" id="new-cookie-type" placeholder="cookie type" value="chocolate chip">
+			<label for="new-cookie-bake-time">bake time: </label><input type="number" value=10 id="new-cookie-bake-time"> minutes
+			<input type="submit" style="display: none; visibility:hidden">		
+		</form>
+	</ul>
+	<ul id="oven">
+		<li class="status">Oven empty (capacity: 3)</li>
+	</ul>
+	<div id="error"></div>	
 </body>
-
-
 </html>
-
