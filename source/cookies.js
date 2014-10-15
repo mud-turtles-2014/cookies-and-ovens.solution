@@ -133,7 +133,7 @@ View.prototype.addCookieSubmitListener = function View_addCookieSubmitListener()
 
 	this.$newCookieForm.submit(function(event) {
 		/* Note: In this scope, this is the #new-cookie-form DOM element. */
-console.log(event);
+
 		// We don't actually want to submit the form to the server. All processing
 		// occurrs client side.
 		event.preventDefault();
