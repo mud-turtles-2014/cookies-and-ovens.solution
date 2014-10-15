@@ -46,8 +46,7 @@ Cookie.prototype.toString = function Cookie_toString() {
 /* Ovens contain bakeable objects (they respond to the bake(time) method, where time is a number).
    When constructing an oven, you can optionally specify a capacity (default: 3). */
 var Oven = function Oven_new(opt_capacity) {
-	var capacity = opt_capacity || 3;
-	this.capacity = capacity;
+	this.capacity = opt_capacity || 3;
 	this.contents = [];
 };
 
@@ -76,7 +75,7 @@ Oven.prototype.removeItem = function Oven_removeItem(item) {
 	if (index == -1) {
 		throw new Error('Item ' + item + ' is not in oven');
 	}
-	this.contents.splice(this.contents.indexOf(item), 1);
+	this.contents.splice(index, 1);
 	return item;
 };
 
@@ -95,6 +94,8 @@ var View = function View_new(oven) {
 
 	// Find our containers in the DOM.
 	this.$oven = $('#oven');
+	this.$oven[0].oven = oven;
+	this.$oven[0].view = this;
 
 	this.$newCookieForm = $('#new-cookie');
 	this.$newCookieType = $('#new-cookie-type');
@@ -196,7 +197,7 @@ View.prototype.addOvenBakeListener = function View_addOvenBakeListener() {
 		this.oven.bakeContents();
 
 		// Update the status display of things in the oven.
-		this.update();
+		this.view.update();
 	});
 };
 
